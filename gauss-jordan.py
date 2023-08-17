@@ -110,4 +110,5 @@ if __name__ == "__main__":
         
     print("\nSoluciones del sistema:")
     for i, sol in enumerate(soluciones):
-        print(f"Variable {i+1} = {sol}")
+        print(f"Variable {i+1} = {round(sol, 4)}")
+
