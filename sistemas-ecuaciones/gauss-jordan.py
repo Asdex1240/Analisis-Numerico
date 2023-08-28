@@ -73,7 +73,7 @@ def gauss_jordan(matriz, b):
         intercambiar_filas(matriz_aumentada, i, max_fila)
         pivot = matriz_aumentada[i][i]
         if pivot == 0:
-            raise ValueError("El pivote es cero, lo que puede indicar que el sistema no tiene solución única.")
+            print("El pivote es cero, lo que puede indicar que el sistema no tiene solución única.")
         multiplicar_fila(matriz_aumentada, i, 1/pivot)
 
         for j in range(n):
